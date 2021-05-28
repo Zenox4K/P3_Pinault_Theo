@@ -1,0 +1,80 @@
+.carte__image {
+    max-width: 100%;
+    max-height: 16rem;
+    width: 100%;
+    object-fit: cover;
+    @media (min-width :1250px) {
+        max-height: 32rem;
+    }
+}
+
+.carte {
+    margin-top: -4rem;
+    border-radius: 2rem 2rem 0 0;
+    background-color: #f6f6f6;
+    position: relative;
+    @media (min-width :1250px) {
+        margin-left: 8rem;
+        margin-right: 8rem;
+        margin-bottom: 3rem;
+        border-radius: 2rem 2rem 2rem 2rem ;
+    }
+}
+
+.carte__titre {
+    padding: 1rem 2rem 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Shrikhand,"cursive";
+    .carte__like{
+        font-size: 1.7rem;
+        color: linear-gradient(rgba(255,121,218,.9),rgba(147,86,220,.9));
+    }
+}
+
+.menu {
+    max-width: 100%;
+    overflow: hidden;
+    padding: 0 1rem;
+    .menu__titre{
+        text-transform: uppercase;
+        padding-bottom: 1rem;
+        font-weight: normal;
+    }
+}
+
+.menu__vignettes {
+    background-color: #fff;
+    padding: 1rem;
+    display: flex;
+    border-radius: 1rem;
+    margin: 1rem 0;
+    box-shadow: 0.25rem 0.25rem 1rem lightgray;
+    cursor:pointer;
+}
+
+.menu__infos{
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.infos__titre{
+    margin: 0;
+}
+
+.infos__description{
+    margin: 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.infos__prix{
+    font-weight: 700;
+    display: flex;
+    justify-content: flex-end; 
+    align-items: flex-end;
+    flex: 1;
+    padding-left: 20px;
+}

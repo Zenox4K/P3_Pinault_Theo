@@ -1,0 +1,24 @@
+.header {
+    padding: 1rem;
+    box-shadow: 0 0 0.5rem gray;
+    position: relative;
+    .header__logo {
+        font-family: $titre;
+        margin: 0;
+        text-align: center;
+    }
+}
+
+.header__fleche{
+    position: absolute;
+    left: 2rem;
+    height: 2rem;
+    width: 2rem;
+    top: 58%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    color: #000;
+}

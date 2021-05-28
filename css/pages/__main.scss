@@ -1,0 +1,161 @@
+.localisation {
+    display: flex;
+    justify-content: center;
+    padding: 1.25rem 1rem;
+    background-color: #f3f3f3;
+    font-size: 1.2rem;
+    .localisation__icone {
+        margin-right: 1rem;
+    }
+    .localisation__lieu {
+        font-weight: 700;   
+    }
+}
+
+.reservation {
+    padding: 2rem;
+    text-align: center;
+    background-color:$color-back;
+    .reservation__titre {
+        margin: 0;
+    }
+    .reservation__description {
+        margin: 1.5rem 0;
+    }
+}
+
+.fonctionnement {
+    padding: 2rem 1rem;
+    .fonctionnement__titre {
+        margin: 0;
+        @media (min-width :1250px) {
+            text-align: center;
+        }
+    }
+    .fonctionnement__etapes {
+        padding: 0;
+        list-style: none;
+        counter-reset: compteListe;
+        @media (min-width :1250px) {
+            display: flex;
+        }
+    }
+    .fonctionnement__etape {
+        padding: 1.5rem;
+        margin: 1rem 0 1rem .75rem;
+        box-shadow: 0.25rem 0.25rem 0.5rem lightgray;
+        border-radius: 1.25rem;
+        background-color:$color-back;
+        display: flex;
+        position: relative;
+        @media (min-width :1250px) {
+            margin-right: 10px;
+            width: 33%;
+        }
+  
+    }
+    .fonctionnement__icone {
+        margin-right: 1rem;
+        color: #7e7e7e;
+    }
+    .fonctionnement__etape:before {
+    counter-increment: compteListe 1;
+    content: counter(compteListe) " ";
+    background: #9356dc;
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: absolute;
+    left: -.75rem;
+    }
+}
+
+
+.restaurants {
+    background-color:$color-back;
+    padding: 2rem 1rem;
+    @media (min-width :1250px) {
+        padding: 2rem 8rem;
+        flex-wrap: wrap;
+        display: flex;
+        row-gap: 2rem;
+    }
+    @media (min-width: 768px) and (max-width: 1249px) {
+        margin: 10%;
+        background-color: white;
+    }
+
+    .restaurants__carte {
+        background-color: #fff;
+        border-radius: 1rem;
+        text-decoration: none;
+        color: inherit;
+        position: relative;
+        transform: scale(1);
+        transition-property: transform;
+        transition-duration: 400ms;
+        &:hover {
+            transform: scale(1.02);
+        }
+        @media (min-width :1250px) {
+            width: 45%;
+        }
+        .carte__image {
+            height: 12rem;
+            width: 100%;
+            border: 0 solid transparent;
+            border-radius: 1rem 1rem 0 0;
+            box-shadow: none;
+            object-fit: cover;
+        }
+    }
+    .carte__nouveau {
+        background-color: #99e2d0;
+        color: darkgreen;
+        padding: .5rem;
+        border-radius: .125rem;
+        position: absolute;
+        top: 1rem;
+        right: .75rem;
+    }
+}
+
+.restaurants__titre {
+    @media (min-width :1250px) {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.restaurants__vignette {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    column-gap: 2rem;
+    row-gap: 2rem;
+    @media (min-width :1250px) {
+        column-gap: 5rem;
+        row-gap: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.carte__description {
+    padding: 1rem;
+    display: flex;
+    .carte__texte{
+        flex-grow: 1;
+    }
+    .carte__titre {
+        margin: 0 0 .25rem;
+    }
+}
+.carte__like{
+    font-size: 2rem;
+}
+
+
