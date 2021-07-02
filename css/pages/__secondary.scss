@@ -17,7 +17,7 @@
         margin-left: 9rem;
         margin-right: 9rem;
         margin-bottom: 3rem;
-        border-radius: 2rem 2rem 2rem 2rem ;
+        border-radius: 2rem;
     }
 }
 
@@ -26,45 +26,24 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-family: Shrikhand,"cursive";
+    font-family: $titre;
     cursor: pointer;
 }
-    .carte__like{
-        font-size: 2rem;
-             opacity: 1;
-             position: absolute;
-        &:hover {
-            opacity:0;
-        }
-    }
-    
-    .carte__like--color{
-        font-size: 2rem;
-        background: -webkit-linear-gradient(
-            175deg
-            , #FF79DA 10%, #9356DC 95%);
-            -webkit-background-clip: text;
-             -webkit-text-fill-color: transparent;
-             opacity: 0;
-        &:hover {
-            opacity: 1;
-        }
-    } 
 
 .menu {
     max-width: 100%;
     overflow: hidden;
     padding: 0 1rem;
     animation: spawn .6s;
-    @media (min-width :1250px){
+    @media (min-width :1250px) {
         padding: 0 8rem;
     }
-    .menu__titre{
+    .menu__titre {
         text-transform: uppercase;
         padding-bottom: 1rem;
         font-weight: normal;
         position: relative;
-        &:after{
+        &:after {
             content: "";
             width: 3.5rem;
             height: .25rem;
@@ -124,66 +103,66 @@
     }
   }
 
-.delai-1{
+.delai-1 {
     animation-delay: 0.1s;
 }
 
-.delai-2{
+.delai-2 {
     animation-delay: 0.2s;
 }
 
-.delai-3{
+.delai-3 {
     animation-delay: 0.3s;
 }
 
-.delai-4{
+.delai-4 {
     animation-delay: 0.4s;
 }
 
-.delai-5{
+.delai-5 {
     animation-delay: 0.5s;
 }
 
-.delai-6{
+.delai-6 {
     animation-delay: 0.6s;
 }
 
-.delai-7{
+.delai-7 {
     animation-delay: 0.7s;
 }
 
-.delai-8{
+.delai-8 {
     animation-delay: 0.8s;
 }
 
-.delai-9{
+.delai-9 {
     animation-delay: 0.9s;
 }
 
-.delai-10{
+.delai-10 {
     animation-delay: 1s;
 }
 
-.menu__infos{
+.menu__infos {
     text-overflow: ellipsis;
     overflow: hidden;
 }
 
-.infos__titre{
+.infos__titre {
     margin: 0;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space:nowrap ;
 }
 
-.infos__description{
+.infos__description {
     margin: 0;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
 }
 
-.infos__prix{
+.infos__prix {
     font-weight: 700;
     display: flex;
     justify-content: flex-end; 
@@ -192,7 +171,7 @@
     padding-left: 20px;
 }
 
-.info__confirmation{
+.info__confirmation {
     background-color: #99e2d0;
     margin: -1rem -5rem -1rem 1rem;
     width: 4rem;
@@ -202,7 +181,7 @@
     transition-duration: .4s;
 }
 
-.logo__cacher{
+.logo__cacher {
     height: 1.6rem;
     width: 1.6rem;
     background-color: #fff;
@@ -212,6 +191,6 @@
     border-radius: 100px;
 }
 
-.logo__info{
+.logo__info {
     color: #99e2d0;
 }

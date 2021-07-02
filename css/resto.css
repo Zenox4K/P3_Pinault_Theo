@@ -184,7 +184,7 @@ body {
     margin-left: 9rem;
     margin-right: 9rem;
     margin-bottom: 3rem;
-    border-radius: 2rem 2rem 2rem 2rem;
+    border-radius: 2rem;
   }
 }
 
@@ -199,30 +199,8 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  font-family: Shrikhand,"cursive";
+  font-family: "Shrikhand", cursive;
   cursor: pointer;
-}
-
-.carte__like {
-  font-size: 2rem;
-  opacity: 1;
-  position: absolute;
-}
-
-.carte__like:hover {
-  opacity: 0;
-}
-
-.carte__like--color {
-  font-size: 2rem;
-  background: -webkit-linear-gradient(175deg, #FF79DA 10%, #9356DC 95%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  opacity: 0;
-}
-
-.carte__like--color:hover {
-  opacity: 1;
 }
 
 .menu {
@@ -466,5 +444,27 @@ body {
 
 .logo__info {
   color: #99e2d0;
+}
+
+.carte__logo .carte__like {
+  font-size: 2rem;
+  position: absolute;
+  opacity: 1;
+}
+
+.carte__logo .carte__like--color {
+  font-size: 2rem;
+  background: -webkit-linear-gradient(175deg, #FF79DA 10%, #9356DC 95%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+}
+
+.carte__logo:hover .carte__like {
+  opacity: 0;
+}
+
+.carte__logo:hover .carte__like--color {
+  opacity: 1;
 }
 /*# sourceMappingURL=resto.css.map */

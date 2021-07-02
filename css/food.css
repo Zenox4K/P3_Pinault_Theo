@@ -379,29 +379,6 @@ body {
   margin: 0 0 .25rem;
 }
 
-.carte__like {
-  font-size: 2rem;
-  opacity: 1;
-  position: absolute;
-  cursor: pointer;
-}
-
-.carte__like:hover {
-  opacity: 0;
-}
-
-.carte__like--color {
-  font-size: 2rem;
-  background: -webkit-linear-gradient(175deg, #FF79DA 10%, #9356DC 95%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  opacity: 0;
-}
-
-.carte__like--color:hover {
-  opacity: 1;
-}
-
 .page__loader {
   background-color: #6f77778a;
   text-align: center;
@@ -411,8 +388,8 @@ body {
   z-index: 999;
   -webkit-animation: loader .01s;
           animation: loader .01s;
-  -webkit-animation-delay: 1.75s;
-          animation-delay: 1.75s;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
 }
@@ -507,5 +484,27 @@ body {
     opacity: 0;
     z-index: 0;
   }
+}
+
+.carte__logo .carte__like {
+  font-size: 2rem;
+  position: absolute;
+  opacity: 1;
+}
+
+.carte__logo .carte__like--color {
+  font-size: 2rem;
+  background: -webkit-linear-gradient(175deg, #FF79DA 10%, #9356DC 95%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+}
+
+.carte__logo:hover .carte__like {
+  opacity: 0;
+}
+
+.carte__logo:hover .carte__like--color {
+  opacity: 1;
 }
 /*# sourceMappingURL=food.css.map */

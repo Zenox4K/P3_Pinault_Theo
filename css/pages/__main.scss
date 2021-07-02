@@ -151,23 +151,5 @@
         margin: 0 0 .25rem;
     }
 }
-.carte__like{
-    font-size: 2rem;
-         opacity: 1;
-         position: absolute;
-         cursor: pointer;
-    &:hover {
-        opacity:0;
-    }
-}
 
-.carte__like--color{
-    font-size: 2rem;
-    background: -webkit-linear-gradient(175deg, #FF79DA 10%, #9356DC 95%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    opacity: 0;
-    &:hover {
-        opacity: 1;
-    }
-} 
+
