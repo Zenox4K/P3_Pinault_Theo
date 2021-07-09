@@ -1,8 +1,3 @@
-/*@import "./utils/variables";
-@import "./utils/mixins";
-@import "./utils/fonctions";
-@import "./utils/placeholders";
-*/
 body {
   margin: 0;
   font-family: Roboto,sans-serif;
@@ -342,8 +337,6 @@ body {
 .restaurants__vignette {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[1];
-      grid-template-columns: repeat(1, 1fr);
   -webkit-column-gap: 2rem;
           column-gap: 2rem;
   row-gap: 2rem;

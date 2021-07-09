@@ -130,7 +130,6 @@
 
 .restaurants__vignette {
     display: grid;
-    grid-template-columns: repeat(1,1fr);
     column-gap: 2rem;
     row-gap: 2rem;
     @media (min-width :1250px) {
